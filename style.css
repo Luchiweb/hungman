@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+
+body {
+  background: no-repeat url(./img/bg.jpg);
+  background-size: cover;
+  font-family: "Kurale", serif;
+  color: #35597b;
+}
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+}
+
+.playground {
+  background: no-repeat url(./img/playground.svg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 410px;
+  height: 530px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 15px 17px 13px #213d5763;
+}
+.word__title {
+  font-size: 52px;
+  margin: 0;
+}
+
+.word__ansver {
+  font-size: 60px;
+  line-height: 100%;
+}
+
+.entry-box__title {
+  font-size: 42px;
+  margin: 20px 0 35px;
+}
+.entry-box__input {
+  background: #dfe4e9;
+  border: 2px solid;
+  border-color: #6e97be;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 90%;
+  padding: 12px;
+  font-family: inherit;
+  margin-bottom: 20px;
+  transition: border-color 1.5s ease;
+  color: #35597b;
+}
+.entry-box__input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.entry-box__btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.entry-box__btn {
+  border: none;
+  font-family: inherit;
+  background-color: #35597b;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.guy {
+  position: relative;
+  height: 500px;
+  width: 350px;
+  margin: 20px;
+}
+.part {
+  position: absolute;
+  display: none;
+}
+.body {
+  right: 260px;
+  top: 165px;
+}
+.head {
+  right: 235px;
+  top: 75px;
+}
+.lHand {
+  right: 275px;
+  top: 165px;
+}
+.rHand {
+  right: 200px;
+  top: 165px;
+}
+.lLeg {
+  right: 265px;
+  top: 341px;
+}
+.rLeg {
+  right: 210px;
+  top: 341px;
+}
+.v1 {
+  right: 0;
+  bottom: 0;
+}
+.v2 {
+  right: 75px;
+  bottom: 0;
+}
+.v3 {
+  right: 75px;
+  top: -10px;
+}
+.v4 {
+  right: 275px;
+  top: -10px;
+}
+
+@media (max-width: 900px) {
+  .playground {
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+  }
+  .entry-box__btns {
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .guy {
+    height: 260px;
+    width: 260px;
+  }
+  .part {
+    scale: 50%;
+  }
+  .rLeg {
+    right: 131px;
+    top: 153px;
+  }
+  .lLeg {
+    right: 157px;
+    top: 155px;
+  }
+  .rHand {
+    right: 115px;
+    top: 75px;
+  }
+  .lHand {
+    right: 162px;
+    top: 75px;
+  }
+  .head {
+    right: 135px;
+    top: 18px;
+  }
+  .body {
+    right: 165px;
+    top: 40px;
+  }
+  .v4 {
+    right: 175px;
+    top: -22px;
+  }
+  .v3 {
+    right: 25px;
+    top: -3px;
+  }
+  .v2 {
+    right: 75px;
+    bottom: -122px;
+  }
+  .v1 {
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .playground {
+    padding: 20px;
+  }
+  .word__title {
+    font-size: 32px;
+  }
+  .word__ansver {
+    font-size: 40px;
+  }
+  .entry-box__title {
+    font-size: 22px;
+    margin: 15px 0 10px;
+  }
+  .entry-box__input {
+    font-size: 13px;
+    padding: 7px;
+  }
+  .entry-box__btns {
+    flex-direction: column;
+  }
+  .entry-box__btn {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .guy {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .playground {
+    width: 80%;
+  }
+  .entry-box__btns {
+    flex-direction: row;
+  }
+}
